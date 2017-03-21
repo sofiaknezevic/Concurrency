@@ -948,7 +948,7 @@ static NSString *const iVersionMacAppStoreURLFormat = @"macappstore://itunes.app
                             }
                             else
                             {
-                                plistVersions = [NSPropertyListSerialization propertyListFromData:data mutabilityOption:0 format:&format errorDescription:NULL];
+                                plistVersions = [NSPropertyListSerialization propertyListWithData:data options:0 format:&format error:NULL];
                             }
                             if (latestVersion)
                             {
